@@ -2,7 +2,7 @@
 
 ## Challenge Overview
 
-![Alt text](images\al-green-homepage.jpg?raw=true "")
+![alt text](https://github.com/NC717/Genetic_engineering_attribution_challenge/blob/main/images/al-green-homepage.jpg?raw=true "")
 
 Overview
 The goal was to create an algorithm that identifies the most likely lab-of-origin for genetically engineered DNA.
@@ -16,7 +16,7 @@ Development of attribution capabilities is critical for the maturation of geneti
 # Results from the hackathon leaderboard 
 
 
-![Alt text](images\score_board.JPG?raw=true "")
+![alt text](https://github.com/NC717/Genetic_engineering_attribution_challenge/blob/main/images/score_board.JPG?raw=true "")
 
 # Final approach
 
@@ -27,10 +27,10 @@ Graph representation learning to learn the structural information for the protei
 
 I used an open source library (rdkit) to convert the protein sequences into SMILE, the final structure for a sample protein sequence is hown below.
 
-![Alt text](images\protein_to_smile.JPG?raw=true "")
+![alt text](https://github.com/NC717/Genetic_engineering_attribution_challenge/blob/main/images/protein_to_smile.JPG?raw=true "")
 
 ## Step 2: Final model architecture used
 
 I tried a variety of Graph neural network based approached to build the complete model. The final model which I used was a graph attention network to learn the embeddings for the protein graphs. These embedding were then concatenated with the n-gram features and a XGB classifier was used on top of it to predict the lab of origin for the protein sequences.
 
-![Alt text](images\final_architecture.JPG?raw=true "")
+![alt text](https://github.com/NC717/Genetic_engineering_attribution_challenge/blob/main/images/final_architecture.JPG?raw=true "")
